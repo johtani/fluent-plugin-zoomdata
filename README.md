@@ -1,29 +1,26 @@
-# Fluent::Plugin::Zoomdata
+# fluent-plugin-zoomdata
 
-TODO: Write a gem description
+A fluent output plugin for sending json to Zoomdata server
 
-## Installation
+see [zoomdata][1](zoomdata.com)
 
-Add this line to your application's Gemfile:
+## Configuration
 
-    gem 'fluent-plugin-zoomdata'
+```
+  <match example.*>
+    type zoomdata
+    endpoint_url https://localhost:443/zoomdata-web/service/upload
+    ssl          true
+    sourcename   testsource
+    username     user
+    password     pass
+  </match>
+```
 
-And then execute:
+## Copyright
+* Copyright (c) 2013- Jun Ohtani
+* License
+  * Apache License, Version 2.0
 
-    $ bundle
+[1]: http://zoomdata.com
 
-Or install it yourself as:
-
-    $ gem install fluent-plugin-zoomdata
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
