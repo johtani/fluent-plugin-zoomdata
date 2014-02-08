@@ -1,4 +1,4 @@
-# fluent-plugin-zoomdata
+# fluent-plugin-zoomdata, a plugin for [Fluentd](http://fluentd.org)
 
 A fluent output plugin for sending json to Zoomdata server
 
